@@ -92,18 +92,26 @@ header {
     margin-top: 1rem;
 }
 
-section {
+main {
     margin-top: 2rem;
     margin-bottom: 2rem;
     height: 100vh;
     min-height: 600px;
 }
 
+section {
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 /********ICONOS *********/
 
 .titulo-Servicios {
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -158,8 +166,13 @@ button {
 
 /***ANUNCIOS**********/
 
+.div-contenido {
+    height: 75vh;
+}
+
 .contenido-anuncio {
     width: 50vw;
+    padding-left: 3rem;
 }
 
 .contenido-anuncio p {
@@ -172,4 +185,44 @@ button {
 
 .money {
     font-weight: bold;
+}
+
+.imgSection {
+    height: 400px;
+}
+
+
+/********BOTONERA***********/
+
+.botonera {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: solid silver 1px;
+}
+
+.botonMenu {
+    height: 100%;
+    border: none;
+    background: none;
+    color: gray;
+    font-weight: 400;
+    width: 25%;
+}
+
+.botonMenu:hover {
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 0px 0px 2px 0px;
+    cursor: pointer;
+    border-radius: 0px;
+    color: black;
+}
+
+.botonMenu::selection {
+    border-color: black;
 }
