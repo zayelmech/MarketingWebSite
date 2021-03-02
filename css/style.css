@@ -80,7 +80,7 @@ img {
 }
 
 header {
-    background: url(../img/fondo1.jpg);
+    background: url(./img/fondo1.jpg);
     background-color: #9D0052;
     background-position: center center;
     background-size: cover;
@@ -95,7 +95,6 @@ header {
 main {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    height: 100vh;
     min-height: 600px;
 }
 
@@ -288,4 +287,38 @@ footer {
     -o-transform: scale(1.1) rotate(6deg);
     -ms-transform: scale(1.1) rotate(6deg);
     transform: scale(1.1) rotate(6deg);
+}
+
+
+/**FOOTER******/
+
+footer {
+    height: 10vh;
+}
+
+.divFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-Footer {
+    min-height: 8vh;
+    width: 200px;
+}
+
+.nav-footer a {
+    font-size: medium;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+/********mision********/
+
+.mision-section {
+    background-color: rgb(15, 199, 207);
+    height: auto;
 }
